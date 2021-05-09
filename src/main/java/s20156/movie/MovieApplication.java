@@ -1,13 +1,13 @@
-package s20156.movies;
+package s20156.movie;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class MoviesApplication {
+public class MovieApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(MoviesApplication.class, args);
+        SpringApplication.run(MovieApplication.class, args);
     }
 
 }
