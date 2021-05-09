@@ -20,4 +20,8 @@ public class MovieService {
     public Movie sendMovie(Movie movie) {
         return movie;
     }
+
+    public Movie updateMovie(Long id, Movie movie) {
+        return movie;
+    }
 }
