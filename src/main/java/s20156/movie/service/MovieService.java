@@ -9,11 +9,15 @@ import java.util.List;
 
 @Service
 public class MovieService {
-    @Autowired
-    public MovieService() {
-    }
-
     public List<Movie> getMovies() {
         return List.of(new Movie("Mr Bean", "John Birkin", MovieCategories.Comedy), new Movie("Matrix", "Larry and Andy Wachowski", MovieCategories.Action), new Movie("Lord of the Rings", "Peter Jackson", MovieCategories.Fantasy));
+    }
+
+    public Movie getMovieById(Long id) {
+        return new Movie(id, "Terminator", "James Cameron", MovieCategories.Action);
+    }
+
+    public Movie sendMovie(Movie movie) {
+        return movie;
     }
 }
