@@ -3,10 +3,17 @@ package s20156.movie.model;
 import s20156.movie.utils.MovieCategories;
 
 public class Movie {
-    private int id;
+    private Long id;
     private String name;
     private String director;
     private MovieCategories category;
+
+    public Movie(Long id, String name, String director, MovieCategories category) {
+        this.id = id;
+        this.name = name;
+        this.director = director;
+        this.category = category;
+    }
 
     public Movie(String name, String director, MovieCategories category) {
         this.name = name;
@@ -17,11 +24,11 @@ public class Movie {
     public Movie() {
     }
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

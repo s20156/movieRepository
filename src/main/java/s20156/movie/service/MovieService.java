@@ -14,6 +14,6 @@ public class MovieService {
     }
 
     public List<Movie> getMovies() {
-        return List.of(new Movie("Mr Bean", "John Birkin", MovieCategories.Comedy), new Movie("Matrix", "Larry and Andy Wachowski", MovieCategories.Action), new Movie("Lord of the Rings", "Peter Jackson", MovieCategories.Action));
+        return List.of(new Movie("Mr Bean", "John Birkin", MovieCategories.Comedy), new Movie("Matrix", "Larry and Andy Wachowski", MovieCategories.Action), new Movie("Lord of the Rings", "Peter Jackson", MovieCategories.Fantasy));
     }
 }
