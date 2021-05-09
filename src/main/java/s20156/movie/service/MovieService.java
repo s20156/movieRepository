@@ -24,4 +24,8 @@ public class MovieService {
     public Movie updateMovie(Long id, Movie movie) {
         return movie;
     }
+
+    public Movie deleteMovie(Long id) {
+        return new Movie(id, "Terminator", "James Cameron", MovieCategories.Action);
+    }
 }
